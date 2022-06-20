@@ -3,5 +3,12 @@
   "version": "0.0.1",
   "main": "index.js",
   "author": "Kiryl Kavaliuk <kirxray@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc -p tsconfig.prod.json",
+    "dev": "yarn tsc -p tsconfig.dev.json -w"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
