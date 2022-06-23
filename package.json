@@ -1,7 +1,16 @@
 {
-  "name": "@kirxray43/ui",
-  "version": "0.0.1",
-  "main": "index.js",
-  "author": "Kiryl Kavaliuk <kirxray@gmail.com>",
-  "license": "MIT"
+  "private": true,
+  "name": "pet",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:ui": "lerna run build --scope=@kirxray43/ui",
+    "build:api": "lerna run build --scope=@kirxray43/api",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "lerna": "^5.1.4"
+  }
 }
